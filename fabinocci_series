@@ -1,0 +1,10 @@
+def fabinocci(n):
+    if n<0:
+        print('enter a positive number:')
+    elif n==0:
+        return 0
+    elif n==1 or n==2:
+        return 1
+    else:
+        return fabinocci(n-1)+fabinocci(n-2)
+print(fabinocci(10))
